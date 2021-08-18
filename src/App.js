@@ -44,7 +44,7 @@ function App() {
               ) : (
                   <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                          <Link className="nav-link" onClick={removeToken} >logout</Link>
+                          <a className="nav-link" onClick={removeToken} >logout</a>
                         </li>
                         
                    </ul>
