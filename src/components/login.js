@@ -16,7 +16,7 @@ function Login() {
     })
 
     function handle(e){
-        const newdata = {... data}
+        const newdata = {...data}
         newdata[e.target.id] = e.target.value
         setData(newdata)
         console.log(newdata)
