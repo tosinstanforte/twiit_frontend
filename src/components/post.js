@@ -52,7 +52,7 @@ useEffect(() => {
 
 
 function handle(e){
-  const newdata = {... data }
+  const newdata = {... data}
   newdata[e.target.id] = e.target.value
   setData(newdata)
   console.log(newdata)
@@ -60,10 +60,10 @@ function handle(e){
 
 function LikeThisPost(post_id){
   
-  var post_id = post_id;
+  var mypost_id = post_id;
 
   Axios.post('https://twitt-db.herokuapp.com/api/like_post', {
-    post_id: post_id,
+    post_id: mypost_id,
    
    
   })

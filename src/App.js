@@ -1,8 +1,7 @@
 import './App.css';
 import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
 import Login from "./components/login";
 import SignUp from "./components/signup";
 import Post from "./components/post";
@@ -44,7 +43,7 @@ function App() {
               ) : (
                   <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                          <a className="nav-link" onClick={removeToken} >logout</a>
+                          <button  className="nav-link" onClick={removeToken} >logout</button >
                         </li>
                         
                    </ul>

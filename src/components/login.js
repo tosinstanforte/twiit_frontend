@@ -16,7 +16,7 @@ function Login() {
     })
 
     function handle(e){
-        const newdata = {... data }
+        const newdata = {... data}
         newdata[e.target.id] = e.target.value
         setData(newdata)
         console.log(newdata)
@@ -64,19 +64,9 @@ function Login() {
                     <label>Password</label>
                     <input onChange={(e) => handle(e)} type="password" id="password" value={data.password} className="form-control" placeholder="Enter password" />
                 </div>
-
-
-    
-
    
 
     <button type="submit" className="btn btn-primary btn-block">Submit</button>
-
-    
-    <p className="forgot-password text-right">
-        Forgot <a href="#">password?</a>
-    </p>
-
           
 </form>
   );
