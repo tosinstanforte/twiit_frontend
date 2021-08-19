@@ -34,7 +34,7 @@ function SignUp() {
         //     console.log(error);
         //   });
 
-        var apiUrl = "http://127.0.0.1:8000/api/register";
+        var apiUrl = "https://twitt-db.herokuapp.com/api/register";
       
         var headers = {
             'Accept' : 'application/json',

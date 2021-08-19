@@ -5,7 +5,7 @@ import { Switch, Route, Link } from "react-router-dom";
 import Login from "./components/login";
 import SignUp from "./components/signup";
 import Post from "./components/post";
-import { useHistory  } from "react-router-dom";
+import { useHistory } from 'react-router'
 
 
 
