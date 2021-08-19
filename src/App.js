@@ -18,7 +18,7 @@ function App() {
     if (sessionStorage.getItem("token")) {
       sessionStorage.removeItem("token")
 
-      history.push("/sign-in");
+      history.push("/");
       history.go(0)
       
     }

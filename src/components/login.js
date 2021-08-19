@@ -36,7 +36,7 @@ function Login() {
                  
                   sessionStorage.setItem('token', response.data.result);
                 console.log(response.data.result)
-                  history.push("/post-in");
+                  history.push("/");
                   history.go(0)
 
               }
