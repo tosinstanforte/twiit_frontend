@@ -26,7 +26,7 @@ function Login() {
         e.preventDefault()
       //  alert("yes");
 
-        Axios.post('https://twitt-db.herokuapp.com/api/post', {
+        Axios.post('https://twitt-db.herokuapp.com/api/login', {
             email: data.email,
             password: data.password
           })
