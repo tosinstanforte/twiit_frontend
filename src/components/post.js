@@ -39,7 +39,8 @@ useEffect(() => {
   .then(function (response) {
     sessionStorage.setItem('name', response.data.user.name);
     sessionStorage.setItem('id', response.data.user.id);
-     console.log(sessionStorage.getItem('name'));
+    //  console.log(sessionStorage.getItem('name'));
+    // console.log(response)
    
   })
   .catch(function (error) {

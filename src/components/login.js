@@ -26,7 +26,7 @@ function Login() {
         e.preventDefault()
       //  alert("yes");
 
-        Axios.post('https://twitt-db.herokuapp.com/api/login', {
+        Axios.post('https://twitt-db.herokuapp.com/api/post', {
             email: data.email,
             password: data.password
           })
@@ -34,8 +34,9 @@ function Login() {
               if(response.statusText === "OK"){
                  
                   sessionStorage.setItem('token', response.data.result);
-                console.log(response)
+                console.log(response.data.result)
                   history.push("/post-in");
+                  history.go(0)
 
               }
               else{
