@@ -58,6 +58,7 @@ function SignUp() {
         .then((response)=> 
         {
             console.log(response);
+            alert("you have successfully registered")
            
         }
         ).catch((error)=>{
